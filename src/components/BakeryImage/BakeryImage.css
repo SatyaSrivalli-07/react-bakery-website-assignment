@@ -1,0 +1,33 @@
+.bakery-image-section {
+    background: #707070;
+    padding: 80px 0 0;
+}
+
+.bakery-image-container {
+    width: 80%;
+    margin: auto;
+}
+
+.bakery-image-container img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .bakery-image-container {
+        width: 90%;
+    }
+
+    .bakery-image-container img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bakery-image-container img {
+        height: 250px;
+    }
+}

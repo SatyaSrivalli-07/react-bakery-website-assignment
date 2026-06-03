@@ -1,0 +1,50 @@
+.traditions{
+    background:#8e8e8e;
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.traditions h1{
+    font-size:50px;
+    margin-bottom:60px;
+}
+
+.tradition-item{
+    max-width:700px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.tradition-item h2{
+    margin-bottom:15px;
+}
+
+.tradition-item p{
+    line-height:1.8;
+    color:#f1f1f1;
+}
+
+.line{
+    width:60%;
+    height:1px;
+    background:#cfcfcf;
+    margin:auto;
+}
+
+.traditions button{
+    margin-top:40px;
+
+    padding:15px 40px;
+
+    background:transparent;
+    color:white;
+
+    border:2px solid white;
+
+    cursor:pointer;
+
+    font-size:16px;
+}

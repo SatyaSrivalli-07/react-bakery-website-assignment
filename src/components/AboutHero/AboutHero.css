@@ -1,0 +1,112 @@
+.about-hero{
+    min-height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url("/features.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.about-overlay{
+    max-width:900px;
+}
+
+.about-logo img{
+    width:120px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.about-hero h1{
+    color:white;
+    font-size:70px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.about-hero p{
+    color:white;
+    font-size:20px;
+    line-height:1.8;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:40px;
+}
+
+.about-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.about-btn{
+    padding:15px 45px;
+    border:none;
+    background:#f5f5e9;
+    color:black;
+    font-weight:600;
+    border-radius:8px;
+}
+
+.products-btn{
+    padding:15px 45px;
+    border:2px solid white;
+    background:transparent;
+    color:white;
+    font-weight:600;
+    border-radius:8px;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .about-hero h1{
+        font-size:50px;
+    }
+
+    .about-hero p{
+        font-size:18px;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:576px){
+
+    .about-logo img{
+        width:90px;
+    }
+
+    .about-hero h1{
+        font-size:34px;
+    }
+
+    .about-hero p{
+        font-size:16px;
+    }
+
+    .about-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .about-btn,
+    .products-btn{
+        width:220px;
+    }
+}

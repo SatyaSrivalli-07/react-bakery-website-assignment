@@ -1,0 +1,75 @@
+.values {
+    background: #6f6f6f;
+    padding: 80px 0 100px;
+}
+
+.values h2 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.values-content {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.values-left,
+.values-right {
+    flex: 1;
+}
+
+.values p {
+    color: white;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.credit {
+    margin-top: 25px;
+}
+
+.credit span {
+    text-decoration: underline;
+}
+
+.values button {
+    margin-top: 30px;
+
+    background: transparent;
+    color: white;
+
+    border: 2px solid white;
+
+    padding: 15px 45px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.values button:hover {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 992px) {
+
+    .values h2 {
+        font-size: 45px;
+    }
+
+    .values-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

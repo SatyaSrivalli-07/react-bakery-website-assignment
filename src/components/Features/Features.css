@@ -1,0 +1,66 @@
+.features{
+    background:#d9d9d9;
+    padding-bottom:80px;
+}
+
+.features-bg{
+    height:350px;
+
+    background-image:url("https://images.unsplash.com/photo-1509440159596-0249088772ff");
+    background-size:cover;
+    background-position:center;
+}
+
+.cards{
+    width:90%;
+    margin:auto;
+
+    margin-top:-80px;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    background:white;
+
+    width:260px;
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h1{
+    font-size:60px;
+    color:#888;
+}
+
+.card h3{
+    margin:15px 0;
+    font-size:28px;
+}
+
+.card p{
+    line-height:1.8;
+    color:#555;
+}
+
+@media(max-width:1000px){
+
+    .cards{
+        flex-wrap:wrap;
+    }
+
+    .card{
+        width:300px;
+    }
+}
