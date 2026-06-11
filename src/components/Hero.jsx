@@ -3,25 +3,47 @@ import "./Hero.css";
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-text">
-        <p>FRESH BREAD & BAKED GOODS</p>
+      <div className="hero-content">
 
-        <h1>Baked fresh daily</h1>
+        {/* IMAGE LEFT */}
+        <div className="hero-image">
+          <img src="/hero.jpg" alt="Bakery" />
+        </div>
 
-        <p>254 W 27ST ST, NEW YORK, NY 10011</p>
-        <p>(212) 123-4567</p>
-        <p>Monday - Wednesday 9am - 7pm</p>
-        <p>Thursday - Saturday 9am - 8pm</p>
-        <p>Sunday 9am - 6pm</p>
+        {/* CONTENT RIGHT */}
+        <div className="hero-text">
+          <p className="hero-tag">
+            FRESH BREAD & BAKED GOODS
+          </p>
 
-        <button>VIEW PRODUCTS</button>
-      </div>
+          <h1>
+            Baked fresh daily by 
+            <br/>
+            bakers with passion
+           
+            </h1>
 
-      <div className="hero-image">
-        <img
-          src="https://images.unsplash.com/photo-1509440159596-0249088772ff"
-          alt="bread"
-        />
+          <p className="contact">
+            📍 254 W 27ST ST, NEW YORK, NY 10011
+          </p>
+
+          <p className="contact">
+            📱 (212) 123-4567
+          </p>
+
+          <div className="timings">
+            <p>Monday - Wednesday 9am - 7pm</p>
+            <p>Thursday - Saturday 9am - 8pm</p>
+            <p>Sunday 9am - 6pm</p>
+          </div>
+
+          <button>VIEW PRODUCTS</button>
+
+          <p className="credit">
+            Image from Freepik
+          </p>
+        </div>
+
       </div>
     </section>
   );

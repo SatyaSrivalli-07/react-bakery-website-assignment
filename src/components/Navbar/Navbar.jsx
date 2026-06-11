@@ -8,42 +8,44 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      <div className="logo">
+      <div className="nav-left">
         <Link to="/">BAKERY</Link>
+
+        <div className="pages-dropdown">
+          <span onClick={() => setMenuOpen(!menuOpen)}>
+            PAGES ▼
+          </span>
+
+          {menuOpen && (
+            <ul className="dropdown-menu">
+              <li>
+                <Link to="/about">ABOUT US</Link>
+              </li>
+
+              <li>
+                <Link to="/landing">LANDING</Link>
+              </li>
+
+              <li>
+                <Link to="/ourbread">BAKERY TEAM</Link>
+              </li>
+
+              <li>
+                <Link to="/contact">WORKSHOPS PAGE</Link>
+              </li>
+            </ul>
+          )}
+        </div>
+
+        <Link to="/ourbread">OUR BREAD</Link>
+        <Link to="/contact">CONTACT</Link>
       </div>
 
-      <button
-        className="menu-btn"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? "✖️" : "☰"}
-      </button>
+      <div className="nav-center">
+        <h2>BAKERY</h2>
+      </div>
 
-      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-
-        <li>
-          <Link to="/">Bakery</Link>
-        </li>
-
-        <li>
-          <Link to="/about">About Us</Link>
-        </li>
-
-        <li>
-          <Link to="/landing">Landing</Link>
-        </li>
-
-        <li>
-          <Link to="/ourbread">Our Bread</Link>
-        </li>
-
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-
-      </ul>
-
-      <div className="icons">
+      <div className="nav-right">
         <span>🔍</span>
         <span>🛒</span>
       </div>
